@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Issta Test Automation">
+
+    <parameter name="url" value="https://www.issta.co.il/"/>
+
+    <test name="test">
+        <parameter name="departure" value="תל אביב"/>
+        <parameter name="destination" value="אמסטרדם"/>
+        <parameter name="startDateOffset" value="7"/>
+        <parameter name="endDateOffset" value="14"/>
+        <parameter name="flightNum" value="0"/>
+
+        <classes>
+            <class name="tests.TestFlightBooking"/>
+        </classes>
+    </test>
+</suite>
